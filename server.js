@@ -47,14 +47,19 @@ app.get('/', (req,res) => {
     .catch(error => console.error(error))
 })
 
-// NEW USER ROUTE
-app.post('/addUser', (req,res) => {
-    // logic here
+// CREAD NEW PROJECT ROUTE
+app.get('/addProject', (req,res) => {
+    res.render('addProject')
 })
 
 // CREATE NEW PHLOW ROUTE
 app.get('/addPhlow', (req,res) => {
     res.render('addPhlow')
+})
+
+// NEW USER ROUTE
+app.post('/addUser', (req,res) => {
+    // logic here
 })
 
 // ADD NEW PROJECT ROUTE

@@ -1,3 +1,4 @@
+/* ADD NEW TASK FIELD TO ADDPHLOW.EJS */
 const newTaskBtn = document.querySelector('#newTaskBtn')
 newTaskBtn.addEventListener('click', () => {
     let taskList = document.querySelectorAll('.taskInput')
@@ -10,5 +11,4 @@ newTaskBtn.addEventListener('click', () => {
     div.setAttribute('id',`task${taskList.length+1}`)
     let parent = document.getElementById('tasks')
     parent.append(div)
-    // taskList.append(div)
 })
