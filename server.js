@@ -47,6 +47,11 @@ app.get('/', (req,res) => {
     .catch(error => console.error(error))
 })
 
+// NEW USER ROUTE
+app.post('/addUser', (req,res) => {
+    // logic here
+})
+
 // CREATE NEW PHLOW ROUTE
 app.get('/addPhlow', (req,res) => {
     res.render('addPhlow')

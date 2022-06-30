@@ -8,21 +8,27 @@
 </head>
 <body>
     <h1>ADD PHLOW</h1>
-    <form action="/addPhlow" method="POST">
+    <form action="/addPhlow" method="POST" id="addPhlowForm">
+        <div id="tasks">
+            <div>
+                <label for="phlowName">Phlow Name:</label>
+                <input name="phlowName" id="phlowName" value="">
+            </div>
+            <div class="taskInput" id="task1">
+                <label for="task1">Task:</label>
+                <input name="task1" id="task1" value="">
+            </div>
+            <div class="taskInput" id="task2">
+                <label for="task2">Task:</label>
+                <input name="task2" id="task2" value="">
+            </div>
+            <div class="taskInput" id="task3">
+                <label for="task3">Task:</label>
+                <input name="task3" id="task3" value="">
+            </div>
+        </div>
         <div>
-            <label for="phlowName">Phlow Name:</label>
-            <input name="phlowName" id="phlowName" value="">
-        </div>
-        <div class="taskInput">
-            <label for="taskOne">Task:</label>
-            <input name="taskOne" id="taskOne" value="">
-        </div>
-        <div class="taskInput">
-            <label for="taskTwo">Task:</label>
-            <input name="taskTwo" id="taskTwo" value="">
-        </div>
-        <div>
-            <button id="newTaskBtn">Another Task</button>
+            <button type ="button" id="newTaskBtn">Another Task</button>
         </div>
         <div>
             <button type="submit">Add Phlow</button>
